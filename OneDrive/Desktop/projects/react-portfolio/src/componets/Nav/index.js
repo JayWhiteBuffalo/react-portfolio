@@ -13,17 +13,17 @@ function Nav (props){
             <nav>
                 <ul className="flex-row">
                     <li className="mx-2">
-                        <a href="#about" onClick={() => setPageSelected('About')}>
+                        <a onClick={() => setPageSelected('About')}>
                             About
                         </a>
                     </li>
                     <li className="mx-2">
-                        <a href="#contact" onClick={() => setPageSelected('Contact')}>
+                        <a  onClick={() => setPageSelected('Contact')}>
                             Contact
                         </a>
                     </li>
                     <li className="mx-2">
-                        <a href="#projects" onClick={() => setPageSelected('Projects')}>
+                        <a  onClick={() => setPageSelected('Projects')}>
                             Projects
                         </a>
                     </li>

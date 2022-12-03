@@ -26,8 +26,8 @@ function App(){
   return (
     <div>
       <Nav
-      contactSelected = {pageSelected}
-      setContactSelected = {setPageSelected}
+      pageSelected = {pageSelected}
+      setPageSelected = {setPageSelected}
       ></Nav>
       <main>
         {renderSection()}
