@@ -162,7 +162,8 @@ textarea {
   flex-direction: row;
   border: 1px solid black;
   padding: 5px;
-  margin: 5px;
+  margin: 10px;
+  margin-top: 25px;
   height: 100%;
 }
 .contentCont {
@@ -273,18 +274,21 @@ a {
 }
 
 .projectCard img{
-  flex-wrap: wrap;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    border-width: 3px;
-    color: black;
-    flex: 1;
-    padding: 5px;
     max-width: 300px;
     min-height: fit-content;
-    margin: 15px;
-    border-radius: 25%;
-    position:relative;
+    margin: 10px;
+    border-radius: 12%;
     box-shadow: 10px 5px 5px var(--primary);
+}
+
+.projectCard img:hover{
+    filter: blur(2px);
+    transform: scale(1);
+    transition: .25s ease-in-out;
+    -webkit-transform: scale(1);
+}
+
+.center{
+  text-align: center;
+  margin-bottom: 5px;
 }
