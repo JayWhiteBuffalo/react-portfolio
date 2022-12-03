@@ -3,6 +3,7 @@ import About from "./componets/About";
 import Nav from "./componets/Nav";
 import Projects from "./componets/projects";
 import Contact from "./componets/ContactForm";
+import Resume from "./componets/Resume";
 
 function App(){
   
@@ -18,6 +19,9 @@ function App(){
           if (pageSelected === 'Projects'){
             return <Projects/>
           };
+          if (pageSelected === 'Resume'){
+            return <Resume/>
+          }
           return 'About';
           }
         

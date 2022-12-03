@@ -29,7 +29,7 @@ function Nav (props){
                     </li>
                     <li>
                         <a 
-                        href="#resume"
+                        onClick={() => setPageSelected('Resume')}
                         >Resume</a>
                         
                     </li>
