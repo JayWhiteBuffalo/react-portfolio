@@ -6,16 +6,16 @@ import Contact from "./componets/ContactForm";
 
 function App(){
   
-  const [contactSelected, setContactSelected] = useState('About');
+  const [pageSelected, setPageSelected] = useState('About');
 
   const renderSection = () => {
-          if (contactSelected === 'About'){
+          if (pageSelected === 'About'){
             return <About/>
           };
-          if (contactSelected === 'Contact'){
+          if (pageSelected === 'Contact'){
             return <Contact/>
           };
-          if (contactSelected === 'Projects'){
+          if (pageSelected === 'Projects'){
             return <Projects/>
           };
           return 'About';
@@ -26,8 +26,8 @@ function App(){
   return (
     <div>
       <Nav
-      contactSelected = {contactSelected}
-      setContactSelected = {setContactSelected}
+      contactSelected = {pageSelected}
+      setContactSelected = {setPageSelected}
       ></Nav>
       <main>
         {renderSection()}

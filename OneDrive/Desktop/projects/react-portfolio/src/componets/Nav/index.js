@@ -2,7 +2,7 @@ import React from "react";
 import { capitalizeFirstLetter } from "../../utils/helpers";
 
 function Nav (props){
-    const {contactSelected, setContactSelected} = props;
+    const {pageSelected, setPageSelected} = props;
     return (
         <header className="flex-row px-1">
             <h2> 
@@ -13,17 +13,17 @@ function Nav (props){
             <nav>
                 <ul className="flex-row">
                     <li className="mx-2">
-                        <a href="#about" onClick={() => setContactSelected('About')}>
+                        <a href="#about" onClick={() => setPageSelected('About')}>
                             About
                         </a>
                     </li>
                     <li className="mx-2">
-                        <a href="#contact" onClick={() => setContactSelected('Contact')}>
+                        <a href="#contact" onClick={() => setPageSelected('Contact')}>
                             Contact
                         </a>
                     </li>
                     <li className="mx-2">
-                        <a href="#projects" onClick={() => setContactSelected('Projects')}>
+                        <a href="#projects" onClick={() => setPageSelected('Projects')}>
                             Projects
                         </a>
                     </li>
