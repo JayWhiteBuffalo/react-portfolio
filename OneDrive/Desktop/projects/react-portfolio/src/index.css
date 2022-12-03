@@ -246,18 +246,6 @@ textarea {
   cursor: pointer;
 }
 
-.modalBackdrop {
-	background: rgba(0, 0, 0, .65);
-	bottom: 0;
-	left: 0;
-	overflow: auto;
-	position: fixed;
-	right: 0;
-	top: 0;
-	z-index: 1;
-}
-
-
 button {
 	background: var(--primary);
 	border: 0;
@@ -287,14 +275,16 @@ a {
 .projectCard img{
   flex-wrap: wrap;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     border-width: 3px;
     color: black;
     flex: 1;
-    padding: 25px;
-    max-width: 200px;
-    min-height: 140px;
-    margin: 10px;
+    padding: 5px;
+    max-width: 300px;
+    min-height: fit-content;
+    margin: 15px;
     border-radius: 25%;
     position:relative;
+    box-shadow: 10px 5px 5px var(--primary);
 }
