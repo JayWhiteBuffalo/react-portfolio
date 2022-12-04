@@ -14,56 +14,58 @@ const Resume = () => {
           <h2>Jay White's Resume:</h2>
         </div>
         <div>
-          <div>
-            {/* download imported PDF file through a-tag */}
+          <div className="center">
             <a href={CV} download>
                 <GiLoad fontSize={'3em'}/>
             </a>
           </div>
         </div>
       </section>
-      <section className="mainCont">
+      <section className="skillsCont">
         <div className="resumeCard">
-          <h3>MERN Stack</h3>
           <ul>
             <li>
               <GiProcessor fontSize={'3em'}/>
             </li>
+            <h3>Libraries/ Frameworks</h3>
             <li>MongoDB</li>
             <li>Express</li>
             <li>React</li>
             <li>Node</li>
-          </ul>
-        </div>
-        <div className="resumeCard">
-          <h3>Tools</h3>
-          <ul>
-          <li>
-              <GiFreemasonry fontSize={'3em'}/>
-            </li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Javascript</li>
             <li>CSS Frameworks</li>
-            <li>SQL</li>
             <li>Sequelize</li>
             <li>Mongoose</li>
             <li>NoSQL</li>
             <li>Jest</li>
-            <li>WebPack</li>
+            <li>JQuery</li>
           </ul>
         </div>
         <div className="resumeCard">
-          <h3>Concepts</h3>
+          <ul>
+          <li>
+              <GiFreemasonry fontSize={'3em'}/>
+            </li>
+            <h3>Languages</h3>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>SQL</li>
+            <li>Git</li>
+          </ul>
+        </div>
+        <div className="resumeCard">
           <ul>
           <li>
               <GiCaesar fontSize={'3em'}/>
             </li>
-            <li>Test Driven Development</li>
-            <li>Object Oriented Programming</li>
-            <li>Object Relational Mapping</li>
-            <li>Model View Controller</li>
-            <li>Computer Science</li>
+            <h3>Sofware Skills</h3>
+            <li>TDD</li>
+            <li>OOP</li>
+            <li>ORM</li>
+            <li>MVC</li>
+            <li>Asyc JS</li>
+            <li>Responsive design</li>
+            <li>DOM</li>
           </ul>
         </div>
       </section>

@@ -1,12 +1,11 @@
 
 main {
-	margin: 0 auto;
-	max-width: 90%;
-  padding: 50px 30px;
+	max-width: 99vw;
+  max-height: 100vh;
 }
 :root {
   --primary: #42cafd;
-  --secondary: #33658a;
+  --secondary: #063f6c;
   --tertiary: #ee5622;
   --light: #f2e9dc;
   --dark: #231c07;
@@ -34,10 +33,17 @@ body {
   line-height: 1.5;
   font-size: 18px;
   letter-spacing: .1em;
-  background: var(--light);
+  background: var(--darker);
   color: var(--dark);
   font-family: 'Poiret One', cursive;
 
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: 36px;
+  color:white;
+  margin: 0;
 }
 
 h1,
@@ -91,12 +97,38 @@ a:hover {
   text-decoration: underline;
 }
 
+/*.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("./assets/images/react-js-banner.png");
+  position: relative;
+  width: 100vw;
+  opacity: 80%;
+  height: 100vh;
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+}*/
+
+
 header {
-  background: var(--primary);
+  background: #05061f;
+  opacity: 80%;
 }
 
 header a {
   color: var(--dark);
+}
+
+header h2{
+  margin-left: 16%;
+  margin-right: 24%;
+}
+
+header h2 a span{
+  color: blue;
+}
+
+header h2 a{
+  color: white;
 }
 
 button {
@@ -160,25 +192,46 @@ textarea {
 .mainCont{
   display: flex;
   flex-direction: row;
-  border: 1px solid black;
   padding: 5px;
   margin: 10px;
   margin-top: 25px;
   height: 100%;
 }
-.contentCont {
+
+.aboutContentCont {
   display: flex;
   flex-direction: column;
   width: 90%;
-  margin: 20px;
-  border: 1px solid #111111;
+  margin: 10%;
   align-items: center;
   justify-content: center;
   
 }
 
+.contentCont {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 20px;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+#about{
+  margin-bottom: 10%;
+}
+
 .profilePic{
   border-radius: 50%;
+  margin: 5% 5%;
+  width: 50%;
+  height: auto;
+  min-width: 400px;
+  max-height: 400px;
+  filter: opacity(100%)
+  
 }
 
 .flex-row {
@@ -219,27 +272,6 @@ textarea {
   margin-bottom: var(--spacing-five);
 }
 
-.px-1 {
-  padding-right: var(--spacing-one);
-  padding-left: var(--spacing-one);
-}
-
-.px-2 {
-  padding-right: var(--spacing-two);
-  padding-left: var(--spacing-two);
-}
-
-.py-1 {
-  padding-top: var(--spacing-one);
-  padding-bottom: var(--spacing-one);
-}
-
-.py-2 {
-  padding-top: var(--spacing-two);
-  padding-bottom: var(--spacing-two);
-}
-
-
 .img-thumbnail {
   width: 300px;
   height: 300px;
@@ -278,27 +310,47 @@ a {
     min-height: fit-content;
     margin: 10px;
     border-radius: 12%;
-    box-shadow: 10px 5px 5px var(--primary);
+    filter: drop-shadow(8px 8px 10px var(--primary)) ;
 }
 
 .projectCard img:hover{
-    filter: blur(2px);
+    filter: contrast(200%) brightness(150%);
     transform: scale(1);
     transition: .25s ease-in-out;
     -webkit-transform: scale(1);
 }
 
+.skillsCont{
+  display: flex;
+  flex: auto;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 5px;
+  margin: 10px;
+  margin-top: 25px;
+  height: 100%;
+}
+
 .resumeCard {
   border: 1px solid black;
+  flex-direction: column;
+  display: flex;
   border-radius: 15%;
   width: 300px;
-  height: 450px;
   margin: 10px;
   padding: 5px;
   text-align: center;
+  background-color: var(--primary);
+}
+
+.resumeCard h3{
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 
 .center{
   text-align: center;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 5px;
 }

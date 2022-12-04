@@ -1,5 +1,4 @@
 import React from "react";
-import { capitalizeFirstLetter } from "../../utils/helpers";
 
 function Nav (props){
     const {pageSelected, setPageSelected} = props;
@@ -7,7 +6,7 @@ function Nav (props){
         <header className="flex-row px-1">
             <h2> 
                 <a href="/">
-                    Jay White
+                    <span>Jay</span>White
                 </a>
             </h2>
             <nav>

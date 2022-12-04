@@ -4,6 +4,7 @@ import Nav from "./componets/Nav";
 import Projects from "./componets/projects";
 import Contact from "./componets/ContactForm";
 import Resume from "./componets/Resume";
+import ParticlesComponent from "./componets/Particles";
 
 function App(){
   
@@ -33,9 +34,10 @@ function App(){
       pageSelected = {pageSelected}
       setPageSelected = {setPageSelected}
       ></Nav>
-      <main>
+      <main className="hero-image">
         {renderSection()}
       </main>
+      <ParticlesComponent/>
     </div>
   );
 }
