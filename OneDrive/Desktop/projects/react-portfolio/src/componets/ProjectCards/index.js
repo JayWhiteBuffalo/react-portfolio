@@ -60,7 +60,7 @@ return (
             alt={projects[i].name}
             className = "img-thumbnail mx-1"
             key={projects[i].name}
-            />
+        />
             </a>
     </div>
         ))}

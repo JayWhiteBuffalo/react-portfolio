@@ -328,10 +328,11 @@ textarea {
 }
 
 .img-thumbnail {
-  width: 300px;
+  width: 20rem;
   height: 300px;
   margin-bottom: 50px;
   cursor: pointer;
+  border-radius: 100%;
 }
 
 button {
@@ -364,12 +365,11 @@ a {
     max-width: 300px;
     min-height: fit-content;
     margin: 10px;
-    border-radius: 12%;
-    filter: drop-shadow(8px 8px 10px var(--primary)) ;
+    border-radius: 10%;
 }
 
 .projectCard img:hover{
-    filter: contrast(200%) brightness(150%);
+    filter: contrast(200%) brightness(150%) drop-shadow(8px 8px 10px var(--primary)) ;
     transform: scale(1);
     transition: .25s ease-in-out;
     -webkit-transform: scale(1);
