@@ -16,25 +16,37 @@ const ParticlesComponent = (props) => {
             },
             interactivity: {
                 events:{
-                    onHover: {
+                    onClick: {
                         enable: true,
+                        mode: "push",
+                    },
+                    onHover: {
+                        enable: false,
                         mode: "repulse",
                     }
                 },
                 modes: {
                     repulse: {
-                        distance: 100,
+                        distance: 177,
+                        duration: 0.4,
+                    },
+                    push: {
+                        quantity: 7,
                     },
                 },
             },
             particles: {
                 links: {
+                    enable: false,
+                    distance: 200,
+                    color:"#0000ff",
+                },
+                collisions: {
                     enable: true,
-                    distance: 80,
                 },
                 move: {
                     enable: true,
-                    speed: {min: 1, max: 1}
+                    speed: {min: .1, max: 1}
                 },
                 opacity: {
                     value: {min: 0.1, max: 0.7}
@@ -42,6 +54,9 @@ const ParticlesComponent = (props) => {
                 size: {
                     value: {min: 1, max: 3}
                 },
+            },
+            pasuseOnBlur: {
+                enable: true,
             },
         };
     }, []);

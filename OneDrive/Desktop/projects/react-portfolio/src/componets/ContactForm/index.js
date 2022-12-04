@@ -32,7 +32,8 @@ function Contact () {
     console.log(formState);
 
     return(
-        <section className="contentCont">
+        <div className="formCont">
+        <section >
             <h1>Contact Me</h1>
             <form id="contact-form" onSubmit={handleSubmit}>
                 <div>
@@ -43,9 +44,9 @@ function Contact () {
                     <label htmlFor="email">Email address:</label>
                     <input type="email" defaultValue={email} onBlur={handleChange} name="email" />
                 </div>
-                <div>
+                <div id="contanctMessage">
                     <label htmlFor="message">Message:</label>
-                    <textarea name="message" defaultValue={message} onBlur={handleChange} rows="5"  />
+                    <textarea name="message" defaultValue={message} onBlur={handleChange} rows="5" />
                 </div>
                 {errorMessage && (
                     <div>
@@ -55,7 +56,7 @@ function Contact () {
                 <button className="button" type="submit">Submit</button>
             </form>
         </section>
-        
+    </div>
     )
 }
 

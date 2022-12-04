@@ -41,7 +41,7 @@ body {
 
 header h1 {
   font-weight: bold;
-  font-size: 36px;
+  font-size: 20px;
   color:white;
   margin: 0;
 }
@@ -115,7 +115,7 @@ header {
 }
 
 header a {
-  color: var(--dark);
+  color: var(--primary);
 }
 
 header h2{
@@ -124,7 +124,7 @@ header h2{
 }
 
 header h2 a span{
-  color: blue;
+  color: #0000ff;
 }
 
 header h2 a{
@@ -152,8 +152,43 @@ button[disabled] {
   opacity: .8;
 }
 
-form {
-  width: 40%;
+.formCont {
+  position: relative;
+  height:50vh;
+  width: 30vw;
+  display: block;
+  background: #cccccc;
+  filter: opacity(80%);
+  border: 5px solid var(--primary);
+  margin-left: 33%;
+  margin-top: 120px;
+  text-align: center;
+  padding: .5rem;
+  min-height: 430px;
+  min-width: 400px;
+}
+  
+
+#contact-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  padding: 1rem;
+  position: absolute;
+}
+
+#contactMessage{
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  padding: 1rem;
+  position: absolute;
+  min-height: 400px;
+  min-width: 450px;
 }
 
 input {
@@ -200,11 +235,14 @@ textarea {
 
 .aboutContentCont {
   display: flex;
+  position: relative;
+  flex-direction: row;
+  width: 60%;
+  flex-wrap: wrap;
+  margin: 6%;
   flex-direction: column;
-  width: 90%;
-  margin: 10%;
-  align-items: center;
-  justify-content: center;
+  
+
   
 }
 
@@ -219,19 +257,36 @@ textarea {
   
 }
 
-#about{
-  margin-bottom: 10%;
+.about{
+  margin-bottom: 5%;
+  color: var(--primary);
+  font-size: 5rem;
+}
+
+#type{
+  color: whitesmoke;
+  font-size: 2rem;
+}
+
+.primary{
+  color: var(--primary);
 }
 
 .profilePic{
   border-radius: 50%;
-  margin: 5% 5%;
+  margin: 20% -30%;
   width: 50%;
   height: auto;
   min-width: 400px;
   max-height: 400px;
-  filter: opacity(100%)
-  
+
+
+  /*filter: drop-shadow(10px 10px 10px var(--primary));*/
+}
+
+#about{
+  font-size: 5rem;
+  color: var(--primary);
 }
 
 .flex-row {
