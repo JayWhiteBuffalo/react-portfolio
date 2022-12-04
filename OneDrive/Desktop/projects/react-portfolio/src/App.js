@@ -4,7 +4,9 @@ import Nav from "./componets/Nav";
 import Projects from "./componets/projects";
 import Contact from "./componets/ContactForm";
 import Resume from "./componets/Resume";
+import Footer from "./componets/Footer";
 import ParticlesComponent from "./componets/Particles";
+//import { AnimatePresence, exitBeforeEnter } from 'framer-motion';
 
 function App(){
   
@@ -24,10 +26,8 @@ function App(){
             return <Resume/>
           }
           return 'About';
-          }
+          }  
         
-        
-
   return (
     <div>
       <Nav
@@ -38,6 +38,7 @@ function App(){
         {renderSection()}
       </main>
       <ParticlesComponent/>
+    <Footer/>
     </div>
   );
 }

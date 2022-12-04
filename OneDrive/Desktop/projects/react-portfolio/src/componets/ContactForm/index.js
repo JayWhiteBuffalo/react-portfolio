@@ -56,6 +56,15 @@ function Contact () {
                 <button className="button" type="submit">Submit</button>
             </form>
         </section>
+        <section>
+                    <div id="moonmandiv">
+                        <img
+                         src={require(`../../assets/images/moonman.png`)}
+                         alt="Moon - Man in meditation"
+                        className = "moonman floating mx-1"
+                        key="MoonMan"/>
+                    </div>
+        </section>
     </div>
     )
 }

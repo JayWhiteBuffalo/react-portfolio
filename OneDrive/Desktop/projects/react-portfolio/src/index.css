@@ -97,6 +97,8 @@ a:hover {
   text-decoration: underline;
 }
 
+
+
 /*.hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("./assets/images/react-js-banner.png");
   position: relative;
@@ -153,14 +155,14 @@ button[disabled] {
 }
 
 .formCont {
+  color: var(--primary);
   position: relative;
   height:50vh;
   width: 30vw;
-  display: block;
-  background: #cccccc;
-  filter: opacity(80%);
-  border: 5px solid var(--primary);
-  margin-left: 33%;
+  display: flex;
+  flex-direction: row;
+  background: transparent;
+  margin-left: 15%;
   margin-top: 120px;
   text-align: center;
   padding: .5rem;
@@ -176,7 +178,15 @@ button[disabled] {
   align-items: center;
   margin: 1rem;
   padding: 1rem;
-  position: absolute;
+  max-width:20vw;
+  position: relative;
+  margin-left: 22%;
+}
+
+#contact-form div{
+  margin: 10px;
+  text-align: center;
+  margin-right: 50px;
 }
 
 #contactMessage{
@@ -189,6 +199,32 @@ button[disabled] {
   position: absolute;
   min-height: 400px;
   min-width: 450px;
+}
+
+.moonman {
+  width: 25vw;
+  height: 45vh;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+#moonmandiv{
+  margin-left: 50%;
+}
+
+.floating { 
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+@keyframes floating {
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, 15px); }
+  100%   { transform: translate(0, -0px); }   
 }
 
 input {
@@ -361,6 +397,7 @@ a {
   color: var(--secondary);
 }
 
+
 .projectCard img{
     max-width: 300px;
     min-height: fit-content;
@@ -369,10 +406,15 @@ a {
 }
 
 .projectCard img:hover{
-    filter: contrast(200%) brightness(150%) drop-shadow(8px 8px 10px var(--primary)) ;
+    filter: contrast(200%) brightness(150%) drop-shadow(8px 8px 10px blue) ;
     transform: scale(1);
     transition: .25s ease-in-out;
     -webkit-transform: scale(1);
+}
+
+#projectsPage div h2{
+  margin: 2rem;
+  color: var(--primary);
 }
 
 .skillsCont{
@@ -408,4 +450,15 @@ a {
   justify-content: center;
   align-items: center;
   margin-bottom: 5px;
+}
+
+
+.footer {
+  bottom: 0 !important;
+	padding-top: 10px !important;
+	padding-bottom: 8px !important ;
+
+}
+
+.links {
 }

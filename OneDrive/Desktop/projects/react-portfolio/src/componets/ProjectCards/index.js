@@ -44,9 +44,9 @@ const [projects] = useState([
 ]);
 
 return (
-    <section>
+    <section id= "projectsPage">
     <div>
-        <h2 className="center">Here are a few past projects that I've worked on. </h2>
+        <h2 className="center">Here are some projects that I've worked on. </h2>
     </div>
     <div className="mainCont flex-row space-between">
         {projects.map((image, i) => (  
