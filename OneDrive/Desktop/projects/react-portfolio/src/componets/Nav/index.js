@@ -12,23 +12,27 @@ function Nav (props){
             <nav>
                 <ul className="flex-row">
                     <li className="mx-2 headerlink">
-                        <a onClick={() => setPageSelected('About')}>
-                            About
+                        <a  onClick={() => setPageSelected('About')}
+                            className={pageSelected === "About" ? "navActive" : "nav-link"}
+                            >About
                         </a>
                     </li>
                     <li className="mx-2 headerlink">
-                        <a  onClick={() => setPageSelected('Projects')}>
-                            Projects
+                        <a  onClick={() => setPageSelected('Projects')}
+                            className={pageSelected === "Projects" ? "navActive" : "nav-link"}
+                            >Projects
                         </a>
                     </li>
                     <li className="mx-2 headerlink">
-                        <a  onClick={() => setPageSelected('Contact')}>
-                            Contact
+                        <a  onClick={() => setPageSelected('Contact')}
+                            className={pageSelected === "Contact" ? "navActive" : "nav-link"}
+                            >Contact
                         </a>
                     </li>
                     <li className="mx-2 headerlink">
                         <a 
                         onClick={() => setPageSelected('Resume')}
+                        className={pageSelected === "Resume" ? "navActive" : "nav-link"}
                         >Resume</a>
                         
                     </li>

@@ -93,12 +93,6 @@ a {
   font-weight: bold;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
-
-
 /*.hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("./assets/images/react-js-banner.png");
   position: relative;
@@ -254,8 +248,8 @@ li {
   list-style: none;
 }
 
-nav a:hover {
-  text-decoration: none;
+.nav-link:hover {
+  color: white;
 }
 
 nav  li {
@@ -403,7 +397,7 @@ a {
 }
 
 .navActive {
-  color: var(--secondary);
+  color: white;
 }
 
 
@@ -480,11 +474,6 @@ a {
   width: 100%;
   margin: 0 auto;
   z-index: 100;
-}
-
-.links{
-
-
 }
 
 .footlink{

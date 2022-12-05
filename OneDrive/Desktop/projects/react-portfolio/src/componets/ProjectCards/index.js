@@ -70,7 +70,7 @@ function ProjectCards(){
     onSlideChange={() => console.log('slide change')}
     onSwiper={(swiper) => console.log(swiper)}
   >
-{projectslide.map((el, i) => ( 
+{projectslide.map((project, i) => ( 
      <SwiperSlide key={projectslide.id} className="slide">  
              <div className="projectCard slide-content">
              <a href = {projectslide[i].github}>
