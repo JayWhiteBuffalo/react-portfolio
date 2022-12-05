@@ -1,30 +1,35 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-
+import { AiFillGithub } from "react-icons/ai";
+import { AiFillLinkedin } from "react-icons/ai";
+import { GiCoffeeCup } from "react-icons/gi";
 
 const Footer = () => {
 
     return(
-    <Container className="footer">
-        <Row c2lassName="primary">
-            <Col md='4'>
-            <p> This site was made by : Jay White</p>
-            </Col>
-            <Col md="4" className="links">
-                <ul>
-                    <li>
-                        <p>github</p>
+        
+    <section className="footer">
+        <div className="primary flex-row center">
+            <div>
+                <ul className="flex-row">
+                    <li className="footlink">
+                        <a href = 'https://github.com/JayWhiteBuffalo'>
+                            <h3><AiFillGithub/></h3>
+                    </a>
                     </li>
-                    <li>
-                        <p>linkden</p>
+                    <li className="footlink">
+                        <a href = 'https://www.linkedin.com/in/jay-white-03b716247/'>
+                            <h3><AiFillLinkedin/></h3>
+                        </a>
                     </li>
-                    <li>
-                        <p>Buy me a Coffee</p>
+                    <li className="footlink">
+                        <a href = 'https://www.buymeacoffee.com/JayWhiteBuq'>
+                            <h3><GiCoffeeCup/></h3>
+                        </a>
                     </li>
                 </ul>
-            </Col>
-        </Row>
-    </Container>
+            </div>
+        </div>
+    </section>
 
     )
 }

@@ -7,6 +7,7 @@ import Resume from "./componets/Resume";
 import Footer from "./componets/Footer";
 import ParticlesComponent from "./componets/Particles";
 
+
  function App(){
   
    const [pageSelected, setPageSelected] = useState('About');

@@ -114,6 +114,7 @@ a:hover {
 header {
   background: #05061f;
   opacity: 80%;
+  display: inline-block;
 }
 
 header a {
@@ -474,9 +475,19 @@ a {
 
 
 .footer {
-  bottom: 0 !important;
-	padding-top: 10px !important;
-	padding-bottom: 8px !important ;
+  position: fixed;
+  bottom: -1rem;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 100;
+}
 
+.links{
+
+
+}
+
+.footlink{
+  margin: 0px 20px;
 }
 
