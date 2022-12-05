@@ -4,7 +4,7 @@ const Knowledge = ({ category }) => {
 
     const [currentSkill, setCurrentSkill] = useState();
 
-
+    
     const skills = [
         {  
           category: 'Languages',
@@ -71,7 +71,7 @@ const Knowledge = ({ category }) => {
 return (
     <div className="skillCont">
             {skills.map((skill, i) => (
-              <div className={`${skill.category && 'circle'}`}>
+              <div className={`circle ${skill.category}`}>
                 <h1
                 key={skill.content}
                 >{skill.content}

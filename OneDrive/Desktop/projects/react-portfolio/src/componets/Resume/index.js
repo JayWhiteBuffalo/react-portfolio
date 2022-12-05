@@ -1,32 +1,39 @@
 import React from "react";
 import { GiLoad } from 'react-icons/gi';
-import { GiFreemasonry } from 'react-icons/gi';
-import { GiProcessor } from 'react-icons/gi';
-import { GiCaesar } from 'react-icons/gi';
+import { FaReact } from 'react-icons/fa';
 import CV from '../../assets/files/CV.pdf';
 import Knowledge from "../Knowledge";
 
-const Resume = () => {
+const Resume = (props) => {
+
+  const {
+    categories = [],
+    setCurrentCategory,
+    currentCategory,
+  } = props;
 
     return(
         <div>
       <section>
         <div>
+          <h1 className="center"> Click the React Icon to Download my CV.</h1>
+        </div>
+        <div>
           <div className="center resumeBar flex-row">
           <div>
-            <button className="Library" type="click">Libraries</button>
+            <button className="Librarybtn" type="click">Libraries</button>
           </div>
           <div>
-            <button className="Framework" type="click">Frameworks</button>
+            <button className="Frameworkbtn" type="click">Frameworks</button>
           </div>
             <a href={CV} download>
-                <GiLoad fontSize={'3em'}/>
+                <FaReact className = "rotate" fontSize={'3em'}/>
             </a>
             <div>
-            <button className="Concepts" type="click">Concepts</button>
+            <button className="Conceptsbtn" type="click">Concepts</button>
           </div>
           <div>
-            <button className="Languages" type="click">Languages</button>
+            <button className="Languagesbtn" type="click">Languages</button>
           </div>
           </div>
         </div>

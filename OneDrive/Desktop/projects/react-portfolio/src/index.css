@@ -215,6 +215,7 @@ button[disabled] {
   margin-left: 50%;
 }
 
+/* Animations */
 .floating { 
   animation-name: floating;
   animation-duration: 3s;
@@ -228,6 +229,25 @@ button[disabled] {
   0% { transform: translate(0,  0px); }
   50%  { transform: translate(0, 15px); }
   100%   { transform: translate(0, -0px); }   
+}
+.rotate { 
+  animation-name: rotate;
+  animation-duration: 120s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+
+.rotate:hover { 
+  animation-name: rotate;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+
+@keyframes rotate {
+
+  100%  { transform: rotate(4320deg); } 
+  
 }
 
 input {
@@ -289,7 +309,7 @@ textarea {
   border: 1px solid black; 
   height: 40rem;
   width: 90%;
-  margin: 3.5rem;
+  margin: 1.5rem 4.5rem
 }
 
 .about{
@@ -419,25 +439,20 @@ a {
 
 /* Resume Page */
 
+section div h1 {
+  color: var(--primary);
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
 .resumeBar {
-  margin: 4rem;
+  margin: 0px;
 }
 
 .resumeBar button {
   margin: 1.5rem;
 }
 
-.Library{
-  background-color: magenta;
-}
-
-.Framework{
-  background-color:greenyellow;
-}
-
-.Languages{
-  background-color: blueviolet;
-}
 
 .skillCont{
   display: flex;
@@ -469,9 +484,33 @@ a {
 }
 
 .circle:hover {
-  filter: brightness(200%);
   transform: scale(1.05);
   border: 2.5px solid var(--primary);
+}
+
+.Librarybtn{
+  background-color: magenta;
+}
+
+.Frameworkbtn{
+  background-color:green;
+}
+
+.Languagesbtn{
+  background-color: blueviolet;
+}
+
+.Library:hover{
+  background-color: magenta;
+  opacity: 90%;
+}
+
+.Framework:hover{
+  background-color:green;
+}
+
+.Languages:hover{
+  background-color: blueviolet;
 }
 
 
