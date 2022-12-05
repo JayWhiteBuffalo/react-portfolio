@@ -4,8 +4,16 @@ import { validateEmail } from "../../utils/helpers";
 function Contact () {
 
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
-    const { name, email, message } = formState;
     const [errorMessage, setErrorMessage] = useState('');
+    const { name, email, message } = formState;
+    
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if(!errorMessage) {
+            setFormState({ [e.target.name]: e.target.value});
+        }
+    };
+
 
     const handleChange = (e) =>{
         if(e.target.name === 'email') {
@@ -13,23 +21,18 @@ function Contact () {
             if(!isValid){
                 setErrorMessage('Your email is invalid');
             } else {
+                setErrorMessage('');
+            }
+            } else {
                 if (!e.target.value.length) {
                     setErrorMessage(`${e.target.name} is required.`);
-                } else {
+            } else {
                 setErrorMessage('');
             }
             }
-        }
-        if (!errorMessage){
-        setFormState({...formState, [e.target.name]: e.target.value});
-        }
-    }
+        };
+    
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log(formState);
-    }
-    console.log(formState);
 
     return(
         <div className="formCont">
@@ -53,7 +56,7 @@ function Contact () {
                         <p className="error-text">{errorMessage}</p>
                     </div>
                 )}
-                <button className="button" type="submit">Submit</button>
+                <button className="button center" type="submit">Submit</button>
             </form>
         </section>
         <section>
