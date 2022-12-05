@@ -121,8 +121,7 @@ header a {
 }
 
 header h2{
-  margin-left: 16%;
-  margin-right: 24%;
+  margin-left: 5rem;
 }
 
 header h2 a span{
@@ -131,6 +130,15 @@ header h2 a span{
 
 header h2 a{
   color: white;
+}
+
+header nav{
+  position: relative;
+  margin-left: 42rem;
+}
+
+.headerlink {
+  position: sticky;
 }
 
 button {
@@ -413,7 +421,7 @@ a {
 }
 
 #projectsPage div h2{
-  margin: 2rem;
+  margin-top: 5rem;
   color: var(--primary);
 }
 
@@ -452,6 +460,18 @@ a {
   margin-bottom: 5px;
 }
 
+.slide{
+  margin-top: 5rem;
+}
+
+.blue{
+  color:#0000ff
+}
+
+.white{
+  color:white
+}
+
 
 .footer {
   bottom: 0 !important;
@@ -460,5 +480,3 @@ a {
 
 }
 
-.links {
-}

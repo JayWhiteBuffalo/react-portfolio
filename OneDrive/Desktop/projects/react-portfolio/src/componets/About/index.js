@@ -11,7 +11,7 @@ function About() {
                 <h1 className="about">Hi There!</h1>
             </div>
             <div>
-                <h1 className="about">I'm Jay White</h1>
+                <h1 className="about">I'm <span className="blue">Jay</span> <span className="white">White</span></h1>
             </div>
             <div id="type">
                 <Type/>

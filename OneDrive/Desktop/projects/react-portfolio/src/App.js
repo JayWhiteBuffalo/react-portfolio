@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import About from "./componets/About";
 import Nav from "./componets/Nav";
-import Projects from "./componets/projects";
+import ProjectPage from "./componets/ProjectPage";
 import Contact from "./componets/ContactForm";
 import Resume from "./componets/Resume";
 import Footer from "./componets/Footer";
@@ -19,7 +19,7 @@ import ParticlesComponent from "./componets/Particles";
              return <Contact/>
            };
            if (pageSelected === 'Projects'){
-             return <Projects/>
+             return <ProjectPage/>
            };
            if (pageSelected === 'Resume'){
              return <Resume/>
