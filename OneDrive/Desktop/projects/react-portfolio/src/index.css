@@ -46,18 +46,6 @@ header h1 {
   margin: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  margin: 5px 0;
-  line-height: 1.25;
-}
-
 h1 {
   font-size: 2.25rem;
 }
@@ -166,7 +154,7 @@ button[disabled] {
   flex-direction: row;
   background: transparent;
   margin-left: 15%;
-  margin-top: 120px;
+  margin-top: 1rem;
   text-align: center;
   padding: .5rem;
   min-height: 430px;
@@ -207,7 +195,7 @@ button[disabled] {
 .moonman {
   width: 25vw;
   height: 45vh;
-  margin-bottom: 50px;
+  margin-top: 5rem;
   cursor: pointer;
 }
 
@@ -432,7 +420,7 @@ a {
 }
 
 #projectsPage div h2{
-  margin-top: 5rem;
+  margin-top: 1.5rem;
   color: var(--primary);
   font: 2em w3-monospace;
 }
@@ -505,6 +493,8 @@ section div h1 {
   opacity: 90%;
 }
 
+
+
 .Framework:hover{
   background-color:green;
 }
@@ -540,7 +530,7 @@ section div h1 {
 
 .footer {
   position: fixed;
-  bottom: -1rem;
+  bottom: -5rem;
   width: 100%;
   margin: 0 auto;
   z-index: 100;
