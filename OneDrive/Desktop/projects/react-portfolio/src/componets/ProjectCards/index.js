@@ -72,7 +72,7 @@ function ProjectCards(){
   >
 {projectslide.map((project, i) => ( 
      <SwiperSlide key={projectslide.id} className="slide">  
-             <div className="projectCard slide-content">
+             <div className="projectCard slide-content center">
              <a href = {projectslide[i].github}>
              <img 
              src={require(`../../assets/images/${i}.png`)}

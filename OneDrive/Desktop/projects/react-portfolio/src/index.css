@@ -409,7 +409,7 @@ a {
 }
 
 .projectCard img:hover{
-    filter: contrast(200%) brightness(150%) drop-shadow(8px 8px 10px blue) ;
+    filter: contrast(200%) brightness(150%) drop-shadow(4px 4px 5px rgb(35, 35, 255)) ;
     transform: scale(1);
     transition: .25s ease-in-out;
     -webkit-transform: scale(1);
@@ -418,6 +418,7 @@ a {
 #projectsPage div h2{
   margin-top: 5rem;
   color: var(--primary);
+  font: 2em w3-monospace;
 }
 
 .skillsCont{
@@ -459,6 +460,9 @@ a {
   margin-top: 5rem;
 }
 
+.slide div a h3{
+  font: 1.5em w3-monospace;
+}
 .blue{
   color:#0000ff
 }
