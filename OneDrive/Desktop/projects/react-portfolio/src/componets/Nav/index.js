@@ -24,17 +24,16 @@ function Nav (props){
                         </a>
                     </li>
                     <li className="mx-2 headerlink">
-                        <a  onClick={() => setPageSelected('Contact')}
-                            className={pageSelected === "Contact" ? "navActive" : "nav-link"}
-                            >Contact
-                        </a>
-                    </li>
-                    <li className="mx-2 headerlink">
                         <a 
                         onClick={() => setPageSelected('Resume')}
                         className={pageSelected === "Resume" ? "navActive" : "nav-link"}
                         >Resume</a>
-                        
+                    </li>
+                    <li className="mx-2 headerlink">
+                        <a  onClick={() => setPageSelected('Contact')}
+                            className={pageSelected === "Contact" ? "navActive" : "nav-link"}
+                            >Contact
+                        </a>
                     </li>
                 </ul>
             </nav>
