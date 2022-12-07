@@ -1,5 +1,5 @@
 import React from "react";
-import { GiLoad } from 'react-icons/gi';
+import { GiLoad, GiSkills } from 'react-icons/gi';
 import { FaReact } from 'react-icons/fa';
 import CV from '../../assets/files/CV.pdf';
 import Knowledge from "../Knowledge";

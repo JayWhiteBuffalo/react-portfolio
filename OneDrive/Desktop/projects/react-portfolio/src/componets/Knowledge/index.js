@@ -1,11 +1,8 @@
 import React, {useState} from "react";
 
-const Knowledge = ({ category }) => {
+const Knowledge = (props) => {
 
-    const [currentSkill, setCurrentSkill] = useState();
-
-    
-    const skills = [
+    const skillset = [
         {  
           category: 'Languages',
           content: 'HTML',
@@ -68,13 +65,23 @@ const Knowledge = ({ category }) => {
         },  
       ]
 
+      // Randomize the order of the array so each time page loads it is diffrent
+    const shuffle = () => [...skillset].sort(() => Math.random() - 0.5);
+
+   // const {isHover, setIsHover} = props;
+   // const [active, setActive] = useState(skills.category);
+    //const styles = {background: `${active}`}
+
+    const skills = shuffle(skillset);
+    console.log(skills);
 return (
     <div className="skillCont">
-            {skills.map((skill, i) => (
-              <div className={`circle ${skill.category}`}>
+            {skills.map((skills, i) => (
+              <div
+               className={`circle ${skills.category}`}>
                 <h1
-                key={skill.content}
-                >{skill.content}
+                key={skills.content}
+                >{skills.content}
                 </h1>
               </div>
             ))}

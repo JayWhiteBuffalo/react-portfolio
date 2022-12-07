@@ -489,7 +489,7 @@ section div h1 {
 }
 
 .Library:hover{
-  background-color: magenta;
+  background-color: #ff00ff;
   opacity: 90%;
 }
 
