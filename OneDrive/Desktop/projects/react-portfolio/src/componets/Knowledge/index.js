@@ -67,18 +67,30 @@ const Knowledge = (props) => {
 
       // Randomize the order of the array so each time page loads it is diffrent
     const shuffle = () => [...skillset].sort(() => Math.random() - 0.5);
+    const newSkillset = shuffle(skillset);
+    const skills = newSkillset;
+    console.log(skills)
 
    // const {isHover, setIsHover} = props;
-   // const [active, setActive] = useState(skills.category);
-    //const styles = {background: `${active}`}
+    const [isActive, setIsActive] = useState(false);
 
-    const skills = shuffle(skillset);
-    console.log(skills);
+    const toggle = (e, skill) => {
+      console.log(e.target.id)
+      if (!isActive){
+      setIsActive(true)
+    } else {
+      setIsActive(false)
+    }
+
+    }
+
 return (
     <div className="skillCont">
             {skills.map((skills, i) => (
               <div
-               className={`circle ${skills.category}`}>
+               id={skills.content}
+               onMouseEnter={toggle}
+               className={`circle ${isActive ? skills.category : ''}`}>
                 <h1
                 key={skills.content}
                 >{skills.content}

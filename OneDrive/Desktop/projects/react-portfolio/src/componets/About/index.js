@@ -1,5 +1,5 @@
 import React from "react";
-import profilePicture from "../../assets/images/Avatar_thumb.png";
+import profilePicture from "../../assets/images/SCAvatar_thumb.png";
 import Type from "./Type";
 
 function About() {

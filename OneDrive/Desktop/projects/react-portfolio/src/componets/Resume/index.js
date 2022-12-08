@@ -4,13 +4,8 @@ import { FaReact } from 'react-icons/fa';
 import CV from '../../assets/files/CV.pdf';
 import Knowledge from "../Knowledge";
 
-const Resume = (props) => {
+const Resume = () => {
 
-  const {
-    categories = [],
-    setCurrentCategory,
-    currentCategory,
-  } = props;
 
     return(
         <div>
