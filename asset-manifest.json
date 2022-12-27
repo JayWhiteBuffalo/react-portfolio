@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.651c9543.css",
-    "main.js": "/react-portfolio/static/js/main.a4b8a046.js",
-    "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
+    "main.css": "/react-portfolio/static/css/main.5b547588.css",
+    "main.js": "/react-portfolio/static/js/main.25537143.js",
+    "static/js/823.ab0bc76d.chunk.js": "/react-portfolio/static/js/823.ab0bc76d.chunk.js",
     "static/media/Profile_Thumb.png": "/react-portfolio/static/media/Profile_Thumb.3311abe89b4712386fa5.png",
-    "static/media/Avatar_thumb.png": "/react-portfolio/static/media/Avatar_thumb.496ce772bb2d724e1061.png",
+    "static/media/Avatar_backup.png": "/react-portfolio/static/media/Avatar_backup.496ce772bb2d724e1061.png",
     "static/media/moonman.png": "/react-portfolio/static/media/moonman.f9e2f4dbe1e1d3593ba7.png",
     "static/media/2.png": "/react-portfolio/static/media/2.aad0e6b259206ca21cd3.png",
     "static/media/react-js-banner.png": "/react-portfolio/static/media/react-js-banner.2ff62646c0dbdc34d719.png",
@@ -16,12 +16,12 @@
     "static/media/1.png": "/react-portfolio/static/media/1.9de9ef5fd4ba29d0aacc.png",
     "static/media/CV.pdf": "/react-portfolio/static/media/CV.0842ec9f57584e513926.pdf",
     "index.html": "/react-portfolio/index.html",
-    "main.651c9543.css.map": "/react-portfolio/static/css/main.651c9543.css.map",
-    "main.a4b8a046.js.map": "/react-portfolio/static/js/main.a4b8a046.js.map",
-    "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
+    "main.5b547588.css.map": "/react-portfolio/static/css/main.5b547588.css.map",
+    "main.25537143.js.map": "/react-portfolio/static/js/main.25537143.js.map",
+    "823.ab0bc76d.chunk.js.map": "/react-portfolio/static/js/823.ab0bc76d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.651c9543.css",
-    "static/js/main.a4b8a046.js"
+    "static/css/main.5b547588.css",
+    "static/js/main.25537143.js"
   ]
 }
