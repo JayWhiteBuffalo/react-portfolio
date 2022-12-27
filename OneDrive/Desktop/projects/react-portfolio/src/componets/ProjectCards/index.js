@@ -12,8 +12,8 @@ const projectslide = [
       name: 'The Sun Hotel',
       description: '',
       image: "../../assets/images/0.png",
-      link: 'https://sun-hotel-demo.herokuapp.com/',
-      github: 'https://github.com/JayWhiteBuffalo/MERN-the-sun-hotel'
+      link: 'https://github.com/JayWhiteBuffalo/MERN-the-sun-hotel',
+      github: 'https://sun-hotel-demo.herokuapp.com/'
   },
   {   
       id: 2,
