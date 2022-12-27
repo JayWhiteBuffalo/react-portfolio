@@ -9,11 +9,11 @@ import 'swiper/css/scrollbar';
 const projectslide = [
   {   
       id: 1,
-      name: 'Rise 2 Challenge',
+      name: 'The Sun Hotel',
       description: '',
       image: "../../assets/images/0.png",
-      link: 'https://thawing-atoll-91539.herokuapp.com/',
-      github: 'https://github.com/JayWhiteBuffalo/Rise2Challenge'
+      link: 'https://sun-hotel-demo.herokuapp.com/',
+      github: 'https://github.com/JayWhiteBuffalo/MERN-the-sun-hotel'
   },
   {   
       id: 2,
